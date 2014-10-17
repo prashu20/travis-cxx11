@@ -8,5 +8,5 @@ before_install:
 install:
 - sudo apt-get install -qq g++-4.8
 
-script: "bash -c build.sh"
+script: "bash -c ./build.sh"
 
