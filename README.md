@@ -1,7 +1,7 @@
 Travis-CXX11
 ============
 
-[![Build Status](https://secure.travis-ci.org/jsteemann/travis-cxx11?branch=master)](http://travis-ci.org/jsteemann/travis-cxx1)
+[![Build Status](https://secure.travis-ci.org/jsteemann/travis-cxx11?branch=master)](http://travis-ci.org/jsteemann/travis-cxx11)
 
 A very brief example of how to get a C++11 program compiled
 on TravisCI.
