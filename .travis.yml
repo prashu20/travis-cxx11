@@ -12,12 +12,11 @@ install:
 
 before_script:
 - ulimit -c unlimited -S # enable core files
-- cat /proc/sys/kernel/core_pattern # show core pattern
 
 script: "bash -c ./build.sh"
 
 after_failure:
-- echo "checking for core file"
-- ls -al .
-- if [[ -f core ]]; then echo "found a core file"; gdb -c core bin/arangod -ex "thread apply all bt full" -ex "set pagination 0" -batch; fi
+- COREFILE=$(find . -maxdepth 1 -name "core*" | head -n 1)
+- echo "corefile: $COREFILE"
+- if [[ -f "$COREFILE" ]]; then gdb -c "$COREFILE" example -ex "thread apply all bt full" -ex "set pagination 0" -batch; fi
 
