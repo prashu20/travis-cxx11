@@ -1,6 +1,6 @@
 
 all:
-	$(CXX) -std=c++11 -g -O0 -DDEBUG -Wall -Wextra example.cpp -o example
+	$(CXX) -g -O0 -DDEBUG -Wall -Wextra example.cpp -o example
 
 test:
 	 ./example || exit 1

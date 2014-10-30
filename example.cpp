@@ -5,7 +5,7 @@ void sub1 (char* value) {
 }
 
 void sub2 () {
-  char* value = nullptr;
+  char* value = 0;
   sub1(value);
 }
 
