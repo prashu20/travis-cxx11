@@ -1,9 +1,17 @@
 #include <string>
+  
+void sub1 (char* value) {
+  std::string test(value); // intentionally fail
+}
+
+void sub2 () {
+  char* value = nullptr;
+  sub1(value);
+}
 
 int main (int, char*[]) {
-  char* value = nullptr;
+  sub2();
 
-  std::string test(value); // intentionally fail
   return 0;
 }
 
