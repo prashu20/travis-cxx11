@@ -11,7 +11,6 @@ install:
 - sudo apt-get install -y gdb
 - ulimit -c unlimited # enable core files
 - cat /proc/sys/kernel/core_pattern # show previous core pattern
-- sudo echo "core" > /proc/sys/kernel/core_pattern # adjust core pattern
 
 script: "bash -c ./build.sh"
 
