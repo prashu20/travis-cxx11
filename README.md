@@ -15,4 +15,4 @@ the `before_install` and `install` sections in `.travis.yml`
 can be used. The example `travis.yml` file installs g++-4.8.
 
 Note that it is also possible to install a more up-to-date
-version of clang with that.
+version of clang with that on ubuntu machine
